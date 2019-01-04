@@ -2,5 +2,5 @@
   
 set -euo pipefail
 
-exec frontail $@
+exec frontail --disable-usage-stats $@
 
