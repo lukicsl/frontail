@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [[ $# -ge 1 ]]; then
-  echo "command parameter supplied"
+  echo "command parameter >$@< supplied" $@
 #  exec frontail --disable-usage-stats "$@"
 else
   echo "Using $LOG_FILES" $LOG_FILES
