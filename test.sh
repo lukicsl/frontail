@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 if [[ $# -ge 1 ]]; then
   echo "command parameter >$@< supplied" $@
