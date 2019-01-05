@@ -2,5 +2,10 @@
   
 set -euo pipefail
 
-exec frontail --disable-usage-stats $@
 
+
+if [[ $# -ge 1]]; then
+  exec frontail --disable-usage-stats "$@"
+else
+  exec frontail --disable-usage-stats $LOG_FILES
+fi
